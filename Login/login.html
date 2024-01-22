@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="main-login">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbTLY9TJ6snn0WUxdmwUTCj8XavL3Q3kpXuHkMrp6NNqmfRCFh-9SDxo-gb7sfABdmImo&usqp=CAU" alt="">
+    </div>
+    <div class="head">
+        <h1 style="margin-left: 1%; text-align: center;">Login</h1>
+        <form id="signup-form" action="#" method="post">
+            <div class="container">
+                <div class="main" style="margin-left: 10%; width: 80px; ">
+                    <div>
+                        <input type="email" id="email" name="email" required placeholder="Email"
+                            style="width: 400%; border-radius: 6px;">
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" required minlength="8"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z]).{8,}$" placeholder="Password"
+                            style="width: 400%; border-radius: 6px;">
+                    </div>
+                </div>
+                <button type="submit" onclick="login()">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="../firebaseConfig.js"></script>
+    <script src="../app.js"></script>
+    <script src="./login.js"></script>
+</body>
+</html>
